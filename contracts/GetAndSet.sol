@@ -1,4 +1,4 @@
-pragma solidity ^0.4.4;
+pragma solidity ^0.5.0;
 
 /// @title Simple example of setting and getting storage data
 /// @author Dev Name
@@ -6,7 +6,7 @@ pragma solidity ^0.4.4;
 contract GetAndSet {
   uint16[3] storedData;
   
-  function setStoredData(uint8 n, uint16 x) {
+  function setStoredData(uint8 n, uint16 x) public {
     storedData[n] = x;
   }
   
